@@ -8,10 +8,10 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    package_name = 'cartographer_slam'
+    package_name = 'project_mapping'
 
 
-    cartographer_config_dir = os.path.join(get_package_share_directory('cartographer_slam'), 'config')
+    cartographer_config_dir = os.path.join(get_package_share_directory('project_mapping'), 'config')
     configuration_basename = "cartographer.lua"
     
     cartographer_node = Node(
